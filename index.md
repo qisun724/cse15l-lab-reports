@@ -1,6 +1,6 @@
 ***Hello, world!***
-# This is a text
-## This is another text
+# This is a title
+## This is another title
 
 [Click to see a picture of a dog!](dog.jpg)
 
