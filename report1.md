@@ -9,4 +9,4 @@ After clicking submit, carefully follow the instructions [here](https://drive.go
 If you don't already have Visual Studio Code on your computer or laptop, go to this [link](https://code.visualstudio.com) to download and install the version for your operating system.
 
 After it is done installing, open it up and it should look something like this(can look a little different, like the color or menu bar depending on your system and settings).
-![Image](vsc-screenshot.jpg)
+![Image](vsc-screenshot.png)
