@@ -18,3 +18,10 @@ If you don't already have Visual Studio Code on your computer or laptop, go to t
 After it is done installing, open it up and it should look something like this(can look a little different, like the color or menu bar depending on your system and settings).
 ![Image](vsc-screenshot.png)
 
+
+
+
+## **3. Remote Connect for MacOS users**
+Now we will use ssh to connect to a remote computer over the Internet. Open up a terminal in VScode by clicking on "Terminal" located on the upper left corner of your screen where the menu bar is.
+![Image](terminal1.png)
+
