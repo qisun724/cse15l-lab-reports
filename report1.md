@@ -18,6 +18,6 @@ Now we will use ssh to connect to a remote computer over the Internet. Open up a
 ![Image](terminal1.png)
 
 After the terminal pops up, type the following command but `zz` replaced with the last two letters in your course-specific account.\
-`ssh cs15lsp23zz@ieng6.ucsd.edu`
+`ssh cs15lsp23zz@ieng6.ucsd.edu hi`
 
 
