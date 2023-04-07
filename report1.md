@@ -17,4 +17,7 @@ After it is done installing, open it up and it should look something like this(c
 Now we will use ssh to connect to a remote computer over the Internet. Open up a terminal in VScode by clicking on "Terminal" located on the upper left corner of your screen where the menu bar is and then click on "New Terminal."
 ![Image](terminal1.png)
 
+After the terminal pops up, type the following command but `zz` replaced with the last two letters in your course-specific account.
+`ssh cs15lsp23zz@ieng6.ucsd.edu`
+
 
