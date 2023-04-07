@@ -16,7 +16,7 @@ After it is done installing, open it up and it should look something like this(c
 
 
 ## **3. Remote Connect for MacOS users**
-Now we will use ssh to connect to a remote computer over the Internet. Open up a terminal in VScode by clicking on "Terminal" located on the upper left corner of your screen where the menu bar is and then click on "New Terminal."
+Now you will use ssh to connect to a remote computer over the Internet. Open up a terminal in VScode by clicking on "Terminal" located on the upper left corner of your screen where the menu bar is and then click on "New Terminal."
 ![Image](terminal1.png)
 
 After the terminal pops up, type the following command but `zz` replaced with the last two letters in your course-specific account.\
@@ -53,7 +53,17 @@ Instead, the tutor said to use our triton username before the `@ieng6.ucsd.edu`.
 
 
 ## **4. Commands**
+Now try running some commands like `cd`, `ls`, `pwd`, etc. on your own computer and on the remote computer(after ssh in the terminal of VScode) Note: you can Ctrl-D or run the command `exit` to log out of the remote server. Below are some specific commands you can run(in the terminal):
+* `cd ~`
+* `cd`
+* `ls -lat`
+* `ls -a`
+* `ls <directory>` where `<directory>` is `/home/linux/ieng6/cs15lsp23/cs15lsp23abc` and the `abc` at the end is one of the another student's username
+* `cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/`
+* `cat /home/linux/ieng6/cs15lsp23/public/hello.txt`
 
+For example, here is what I got from running the command `ls -a`:
+![Image](ls.png)
 
 
 
