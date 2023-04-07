@@ -20,7 +20,7 @@ Now we will use ssh to connect to a remote computer over the Internet. Open up a
 ![Image](terminal1.png)
 
 After the terminal pops up, type the following command but `zz` replaced with the last two letters in your course-specific account.\
-`ssh cs15lsp23zz@ieng6.ucsd.edu hi`
+`ssh cs15lsp23zz@ieng6.ucsd.edu`
 
 Click enter and then you will most likely see this message if it is your first time connected to this server:
 ```
@@ -46,7 +46,7 @@ ieng6-203   23:25:01   1  0.08,  0.15,  0.11
 Sun Jan 02, 2022 11:28pm - Prepping cs15lsp23
 ```
 
-However, I ran into an issue when I ran my command with a message stating that `Connection to ieng6.ucsd.edu closed by remote host.` ![Image](error.png)
+However, I ran into an issue when I ran my command and got this message: ![Image](error.png)
 
 
 Instead, the tutor said to use our triton username before the `@ieng6.ucsd.edu`. If you try that instead, put in the same CSE15L accunt password, and click enter. Now your terminal should be connected to a computer in the CSE building. Any of the commands you run in your computer's(client) terminal will run on that computer(server). ![Image](message.png)
