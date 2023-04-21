@@ -1,5 +1,5 @@
 # **LAB REPORT 2**
-## **Part 1 - Creating a StringServer**
+## **Part 1 - Creating a StringServer**hi
 ![Image](StringServerCode.png)
 
 ![Image](ex1.png)
