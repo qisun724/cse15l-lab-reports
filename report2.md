@@ -11,10 +11,15 @@
 
 ![Image](ex2.png)
 * The methods that are being called are the same as described previously for the first example of screenshot. The relevant arguments for those methods also stay the same. The values of the **ArrayList** strs and **String** result field of the **StringServer** class will also stay the same; they store Strings.
-* The **ArrayList** strs and the **String** result behave the same as described in previously, but I tried using "unusal" incoming requests to see if anything will happen. .....I did notice different and unusal/unexpected outputs for two incoming requests using /add-message. For the first one, if we give it a string input that starts with `#`, it will throw ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1. The second request is that if we give it a string input that contains`%` or `^`, it will throw URISyntaxException.
+* The **ArrayList** strs and the **String** result behave the same as described in previously, but I tried giving it some "unusal" incoming requests to see if anything different will happen. Even after different values like integers and strings that are URLs(https://), the code still behaved like how it should by displaying every incoming request. However, I did notice different and unusal/unexpected outputs for two incoming requests using /add-message. For the first one, if we give it a string input that starts with `#`, it will throw ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1. The second request is that if we give it a string input that contains`%` or `^`, it will throw URISyntaxException.
 
 
 
 
-## **Part 2**
-Choose one of the bugs from lab 3
+## **Part 2 - Debugging from Lab 3**
+```
+
+```
+
+## **Part 3**
+Something very useful that I learned from my peers during lab 2 was using the up arrow on the keyboard as a shortcut to go to previously commands ran on in the terminal. This saved me so much time because I don't have to go back to look to copy and paste the commands for compiling and executing the code. Another thing I learned was from lab 3 when I tried using **assertEquals** to compare **double** but getting errors saying the method is deprecated. That was when I found out that there is an **assertEquals** method with three parameters where the first two are the same. The third parameter is delta, and I learned that it is for us to put the difference we want between the expected and actual in order to determine whether it passes or fails. We need to do this because of the problem with precision when working with doubles. For example, we would put delta as 0.1 to let the test pass as long as the difference between the expected and actual is 0.1 or below.
