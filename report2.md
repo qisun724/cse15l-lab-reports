@@ -3,7 +3,7 @@
 ![Image](StringServerCode.png)
 
 ![Image](ex1.png)
-* After each use of /add-message in the above screenshot, the main method is called first. Then the start method is called using the port given in the command line and StringHandler() object. 
+* After each use of /add-message in the above screenshot, the main method is called first. Then the start method in the Server.java(code not shown; gotten from wavelet repository from lab2) is called using the port given in the command line and StringHandler() object. 
 * What are the relevant arguments to those methods, and the values of any relevant fields of the class?
 * How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why. 
 
