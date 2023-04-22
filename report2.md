@@ -30,12 +30,29 @@ Input that doesn't induce a failure
 ```
 @Test
 public void testAverageWithoutLowest(){
-  double[] input = {4.4};
-  assertEquals(0, ArrayExamples.averageWithoutLowest(input), 0);
+  double[] input = {10.2, 32.4, 11.1, 10.1, 23.4, 23.2};
+  assertEquals(20.06, ArrayExamples.averageWithoutLowest(input), 0.1);
 }
 ```
 
-Symptom 
+Tests ran & Symptom 
+```
+@Test
+public void testAverageWithoutLowest(){
+  double[] input1 = {};
+  double[] input2 = {4.0};
+  double[] input3 = {3.52, 10.3, 5.84, 3.52, 21.2};
+  double[] input4 = {10.2, 32.4, 11.1, 10.1, 23.4, 23.2};
+  assertEquals(0, ArrayExamples.averageWithoutLowest(input1), 0);
+  assertEquals(0, ArrayExamples.averageWithoutLowest(input2), 0);
+  assertEquals(10.215, ArrayExamples.averageWithoutLowest(input3), 0.1);
+  assertEquals(20.06, ArrayExamples.averageWithoutLowest(input4), 0.1);
+
+```
+image
+
+
+
 
 The Bug, Before vs After
 ```
