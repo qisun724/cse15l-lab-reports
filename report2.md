@@ -49,9 +49,7 @@ public void testAverageWithoutLowest(){
   assertEquals(20.06, ArrayExamples.averageWithoutLowest(input4), 0.1);
 
 ```
-image
-
-
+![Image](Symptom.png)
 
 
 The Bug, Before vs After
@@ -82,6 +80,10 @@ static double averageWithoutLowest(double[] arr) {
   return (sum-lowest) / (arr.length - 1);
 }
 ```
+The bug appears to be the condition where it loops through arr and checks whether the current num is equal to the value of the lowest. If it is not, then it will be added to the sum. This is a problem because we only want to remove one instance of the number lowest when calculating the average, but this bug makes it so we don't count in number equal to lowest. By changing the body of that loop to simply adding up all the numbers, we can then just subtract the lowest from the sum at the return statement. This makes sure that even if there are many copies of numbers equal to the value of the lowest, we only take out one when calculating the average.
+
+
+
 
 ## **Part 3**
 Something very useful that I learned from my peers during lab 2 was using the up arrow on the keyboard as a shortcut to go to previously commands ran on in the terminal. This saved me so much time because I don't have to go back to look to copy and paste the commands for compiling and executing the code. 
