@@ -14,6 +14,7 @@ technical/911report/chapter-13.5.txt:2468:                DOS record, Log of USA
 technical/911report/chapter-13.5.txt:3014:                106-215, 114 Stat. 337 (2000), � 2(a). The USA PATRIOT Act mandated that the
 ```
 The `-n` command-line option prints out the line numbers of matching lines along with their matching lines as well to the terminal. This is useful as it allows us to skip straight to the line numbers in the files to read about the all the contents instead of reading it off of the terminal.\
+
 **Example 2:**  `$ grep -n "journal" technical/plos/journal.pbio.0020001.txt technical/plos/journal.pbio.0020010.txt`
 ```
 technical/plos/journal.pbio.0020001.txt:110:        which are mutually exclusive. It is possible that publishing in international journals as a
@@ -50,7 +51,7 @@ technical/plos/journal.pbio.0020010.txt:57:        readily than in the tradition
 ```
 If we want to quickly compare if two files have similar content, like checking for playgiarism, we can use grep -n on the two files to know where the similar content start via the line number. Similarly, we can use this command-line option on java files instead of text files to quickly find the lines of code we need, such as finding specific methods to look at their implementation, and even comparing the different implementations. 
 
-I remember seeing this option somewhere online, so I asked ChatGPT with the given prompt to know more about it: what uses can I do with grep -n.
+I remember seeing this option somewhere online, so I asked ChatGPT with the given prompt to know more about it: what uses can I do with grep -n.\
 
 
 
@@ -59,7 +60,7 @@ I remember seeing this option somewhere online, so I asked ChatGPT with the give
 ```
 13
 ```
-The `-c` command-line option gives the number of times the provided pattern appears in the file(s), and in this case, the number of times "Hungerford" appears in the DraftRecom-PDF.txt is 13. This can be useful if we want to count the number of error messages in our file.
+The `-c` command-line option gives the number of times the provided pattern appears in the file(s), and in this case, the number of times "Hungerford" appears in the DraftRecom-PDF.txt is 13. This can be useful if we want to count the number of error messages in our file.\
 
 **Example 2:**   `$ grep -c "^" technical/911report/*.txt`
 ```
@@ -83,16 +84,16 @@ technical/911report/preface.txt:108
 ```
 This use of the command-line option is counting the number of lines in all the text files inside the 911report directory. We can even put all that result in a new file and sort it so it can be useful if we want to know which files has the most lines/content. This behaves similar to the `wc` command.
 
-The sources I used for this command-line option is the website [Grep Command in Linux](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/) and ChatGPT with the prompt "different ways to use grep -c".
+The sources I used for this command-line option is the website [Grep Command in Linux](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/) and ChatGPT with the prompt "different ways to use grep -c".\
 
 
 
 
-## 3. Iscioac
-**Example 1:**   `$ grep -n "USA" technical/911report/*`
+## 3. Name of Files using `-l`
+**Example 1:**   `$ grep -l "USA" technical/911report/*`
 ```
 ```
-What it is doing and why it is useful
+The `-l` command-line option gives us the name of files that contains the given pattern, which in this case, the name of files that contain  and why it is useful
 
 **Example 2:**   `$ grep -n "USA" technical/911report/*`
 ```
@@ -104,8 +105,8 @@ cite sources
 
 
 
-## 4. Iscioac
-**Example 1:**   `$ grep -n "USA" technical/911report/*`
+## 4. Ignore Cases Using `-i`
+**Example 1:**   `$ grep -i "USA" technical/911report/*`
 ```
 ```
 What it is doing and why it is useful
