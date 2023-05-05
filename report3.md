@@ -13,7 +13,7 @@ technical/911report/chapter-13.5.txt:2382:                Appropriate Tools Requ
 technical/911report/chapter-13.5.txt:2468:                DOS record, Log of USA 9-11 Terrorist Attack Task Force, Sept. 13, 2001; Jack S.
 technical/911report/chapter-13.5.txt:3014:                106-215, 114 Stat. 337 (2000), � 2(a). The USA PATRIOT Act mandated that the
 ```
-The `-n` option prints out the line numbers of matching lines along with their matching lines as well to the terminal. This is useful as it allows us to skip straight to the line numbers in the files to read about the all the contents instead of reading it off of the terminal.\
+The `-n` command-line option prints out the line numbers of matching lines along with their matching lines as well to the terminal. This is useful as it allows us to skip straight to the line numbers in the files to read about the all the contents instead of reading it off of the terminal.\
 **Example 2:**  `$ grep -n "journal" technical/plos/journal.pbio.0020001.txt technical/plos/journal.pbio.0020010.txt`
 ```
 technical/plos/journal.pbio.0020001.txt:110:        which are mutually exclusive. It is possible that publishing in international journals as a
@@ -53,12 +53,66 @@ If we want to quickly compare if two files have similar content, like checking f
 I remember seeing this option somewhere online, so I asked ChatGPT with the given prompt to know more about it: what uses can I do with grep -n.
 
 
-## 2. Iscioac
+
+## 2. Count of Appearances using `-c`
+**Example 1:**   `$ grep -c "Hungerford" technical/government/Alcohol_Problems/DraftRecom-PDF.txt `
+```
+13
+```
+The `-c` command-line option gives the number of times the provided pattern appears in the file(s), and in this case, the number of times "Hungerford" appears in the DraftRecom-PDF.txt is 13. This can be useful if we want to count the number of error messages in our file.
+
+**Example 2:**   `$ grep -c "^" technical/911report/*.txt`
+```
+technical/911report/chapter-1.txt:731
+technical/911report/chapter-10.txt:603
+technical/911report/chapter-11.txt:817
+technical/911report/chapter-12.txt:1539
+technical/911report/chapter-13.1.txt:1089
+technical/911report/chapter-13.2.txt:1236
+technical/911report/chapter-13.3.txt:1718
+technical/911report/chapter-13.4.txt:2941
+technical/911report/chapter-13.5.txt:3237
+technical/911report/chapter-2.txt:948
+technical/911report/chapter-3.txt:3159
+technical/911report/chapter-5.txt:1204
+technical/911report/chapter-6.txt:1898
+technical/911report/chapter-7.txt:1579
+technical/911report/chapter-8.txt:1036
+technical/911report/chapter-9.txt:1885
+technical/911report/preface.txt:108
+```
+This use of the command-line option is counting the number of lines in all the text files inside the 911report directory. We can even put all that result in a new file and sort it so it can be useful if we want to know which files has the most lines/content. This behaves similar to the `wc` command.
+
+The sources I used for this command-line option is the website [Grep Command in Linux](https://www.freecodecamp.org/news/grep-command-in-linux-usage-options-and-syntax-examples/) and ChatGPT with the prompt "different ways to use grep -c".
+
 
 
 
 ## 3. Iscioac
+**Example 1:**   `$ grep -n "USA" technical/911report/*`
+```
+```
+What it is doing and why it is useful
+
+**Example 2:**   `$ grep -n "USA" technical/911report/*`
+```
+```
+What it is doing and why it is useful
+
+cite sources
+
 
 
 
 ## 4. Iscioac
+**Example 1:**   `$ grep -n "USA" technical/911report/*`
+```
+```
+What it is doing and why it is useful
+
+**Example 2:**   `$ grep -n "USA" technical/911report/*`
+```
+```
+What it is doing and why it is useful
+
+cite sources
