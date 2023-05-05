@@ -131,14 +131,31 @@ I learned about this command-line option in the [Linux Pocket Guide by Daniel J.
 
 
 ## 4. Ignore Cases Using `-i`
-**Example 1:**   `$ grep -i "USA" technical/911report/*`
+**Example 1:**   `$ grep -in "introduction" technical/government/About_LSC/*.txt`
 ```
+technical/government/About_LSC/Progress_report.txt:605:Introduction (purpose of the manual, how to use it,
+technical/government/About_LSC/State_Planning_Report.txt:814:introduction of the Illinois Equal Justice Act in the Illinois
+technical/government/About_LSC/State_Planning_Report.txt:1039:pro se. The 2001 Conference featured an introduction of Indiana
+technical/government/About_LSC/State_Planning_Report.txt:1040:Legal Services, Inc. and an introduction of the new pro bono plans
+technical/government/About_LSC/State_Planning_Special_Report.txt:41:INTRODUCTION
+technical/government/About_LSC/Strategic_report.txt:8:Introduction
+technical/government/About_LSC/commission_report.txt:256:I. INTRODUCTION
+technical/government/About_LSC/commission_report.txt:3277:accompanying the introduction of that bill noted only that the bill
+technical/government/About_LSC/conference_highlights.txt:10:Introduction
+technical/government/About_LSC/reporting_system.txt:7:Introduction
 ```
-What it is doing and why it is useful
+The `-i` command-line option allows us to search for files with lines containing the pattern without caring about lower/upper cases. By combining `-i` and `-n` above, we are able to quickly go into the files and to their line number to read about all their introductions.
 
-**Example 2:**   `$ grep -n "USA" technical/911report/*`
+**Example 2:**   `$ grep -iw "we have some planes" technical/911report/*.txt > grep-results.txt `
 ```
+technical/911report/chapter-1.txt:"WE HAVE SOME PLANES"
+technical/911report/chapter-1.txt:    At the same time, Boston Center realized that a message transmitted just before 8:25 by the hijacker pilot of American 11 included the phrase, "We have some planes."
+technical/911report/chapter-1.txt:    At 8:24:38, the following transmission came from American 11: American 11: We have some planes. Just stay quiet, and you'll be okay. We are returning to the airport.
+technical/911report/chapter-1.txt:    The controller only heard something unintelligible; he did not hear the specific words "we have some planes." The next transmission came seconds later: American 11: Nobody move. Everything will be okay. If you try to make any moves, you'll endanger yourself and the airplane. Just stay quiet.
+technical/911report/chapter-1.txt:    By 9:25, FAA's Herndon Command Center and FAA headquarters knew two aircraft had crashed into the World Trade Center. They knew American 77 was lost. At least some FAA officials in Boston Center and the New England Region knew that a hijacker on board American 11 had said "we have some planes." Concerns over the safety of other aircraft began to mount. A manager at the Herndon Command Center asked FAA headquarters if they wanted to order a "nationwide ground stop." While this was being discussed by executives at FAA headquarters, the Command Center ordered one at 9:25.
+technical/911report/chapter-1.txt:    Right after the Pentagon was hit, NEADS learned of another possible hijacked aircraft. It was an aircraft that in fact had not been hijacked at all. After the second World Trade Center crash, Boston Center managers recognized that both aircraft were transcontinental 767 jetliners that had departed Logan Airport. Remembering the "we have some planes" remark, Boston Center guessed that Delta 1989 might also be hijacked. Boston Center called NEADS at 9:41 and identified Delta 1989, a 767 jet that had left Logan Airport for Las Vegas, as a possible hijack. NEADS warned the FAA's Cleveland Center to watch Delta 1989. The Command Center and FAA headquarters watched it too. During the course of the morning, there were multiple erroneous reports of hijacked aircraft. The report of American 11 heading south was the first; Delta 1989 was the second.
+technical/911report/chapter-13.2.txt:            1 "We Have Some Planes"
 ```
-What it is doing and why it is useful
+By combining `-i` and `-w`, we can find the files that have the same exact given pattern in terms of characters but ignoring whether it is lower and upper case. This is useful as it broadens our search "filter" and can also come in handy if we want to search for certain methods without having to worry if the cases are different.
 
-cite sources
+I learned about this command-line option in the [Linux Pocket Guide by Daniel J. Barrett](https://www.oreilly.com/library/view/linux-pocket-guide/9780596806347/re52.html).
