@@ -90,17 +90,42 @@ The sources I used for this command-line option is the website [Grep Command in 
 
 
 ## 3. Name of Files using `-l`
-**Example 1:**   `$ grep -l "USA" technical/911report/*`
+**Example 1:**   `$ grep -l "Utah" technical/government/Media/*.txt`
 ```
+technical/government/Media/5_Legal_Groups.txt
+technical/government/Media/All_May_Have_Justice.txt
+technical/government/Media/Funding_May_Limit.txt
+technical/government/Media/It_Pays_to_Know.txt
+technical/government/Media/Supporting_Legal_Center.txt
+technical/government/Media/The_State_of_Pro_Bono.txt
+technical/government/Media/grants_fail_to_come.txt
 ```
-The `-l` command-line option gives us the name of files that contains the given pattern, which in this case, the name of files that contain  and why it is useful
+The `-l` command-line option gives us the path/name of files that contain the given pattern, which in this case, the above are the paths of files that contain "Utah". This is useful if we want to know the paths of files with specific content, which could also be used if we want to check if all files have a certain method when working with java files.
 
-**Example 2:**   `$ grep -n "USA" technical/911report/*`
+**Example 2:**   `$ grep -l "microorganisms" technical/plos/*.txt | xargs cat`
 ```
+ 
+    
+      
+        
+        For half a century, natural products from microorganisms have been the main source of
+        medicines for treating infectious disease. The most important chemical class of these
+        antibiotics, apart from the penicillins, is the polyketides. They are made by the stepwise
+        building of long carbon chains, two atoms at a time, by multifunctional enzymes that
+        determine the chain length, oxidation state, and pattern of branching, cyclisation, and
+        .
+        .
+        .
+        difficulties in production that have led to shortages since licensure. A better
+        understanding of the mechanisms that underlie natural immunity to pneumococcus could pave
+        the way for the development of more effective, species-specific pneumococcal vaccines.
+      
+    
+      
 ```
-What it is doing and why it is useful
+If we want to find a file that mentions a certain topic in a directory, we can use this command-line option, such as shown above where we found the path of the file about microorgnisms, give it as the input for cat to print the content to the terminal to brief read. This command can also be used if we want to quickly look at the implementation of certain methods.
 
-cite sources
+I learned about this command-line option in the [Linux Pocket Guide by Daniel J. Barrett](https://www.oreilly.com/library/view/linux-pocket-guide/9780596806347/re52.html).
 
 
 
