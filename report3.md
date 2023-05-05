@@ -13,9 +13,7 @@ technical/911report/chapter-13.5.txt:2382:                Appropriate Tools Requ
 technical/911report/chapter-13.5.txt:2468:                DOS record, Log of USA 9-11 Terrorist Attack Task Force, Sept. 13, 2001; Jack S.
 technical/911report/chapter-13.5.txt:3014:                106-215, 114 Stat. 337 (2000), � 2(a). The USA PATRIOT Act mandated that the
 ```
-The `-n` option prints out the line numbers of matching lines along with their matching lines as well to the terminal. This is useful as it allows us to skip straight to the line numbers in the files to read about the all the contents instead of reading it off of the terminal.
-
-
+The `-n` option prints out the line numbers of matching lines along with their matching lines as well to the terminal. This is useful as it allows us to skip straight to the line numbers in the files to read about the all the contents instead of reading it off of the terminal.\
 **Example 2:**  `$ grep -n "journal" technical/plos/journal.pbio.0020001.txt technical/plos/journal.pbio.0020010.txt`
 ```
 technical/plos/journal.pbio.0020001.txt:110:        which are mutually exclusive. It is possible that publishing in international journals as a
@@ -52,7 +50,7 @@ technical/plos/journal.pbio.0020010.txt:57:        readily than in the tradition
 ```
 If we want to quickly compare if two files have similar content, like checking for playgiarism, we can use grep -n on the two files to know where the similar content start via the line number. Similarly, we can use this command-line option on java files instead of text files to quickly find the lines of code we need, such as finding specific methods to look at their implementation, and even comparing the different implementations. 
 
-Along with each option/mode you show, cite your source for how you found out about it as a URL or a description of where you found it.
+I remember seeing this option somewhere online, so I asked ChatGPT with the given prompt to know more about it: what uses can I do with grep -n.
 
 
 ## 2. Iscioac
