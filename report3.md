@@ -2,8 +2,7 @@
 grep command-line options or alternate ways to use the command
 
 ## 1. Line numbers of Matching Lines using `-n`
-**Example 1**
-`$ grep -n "USA" technical/911report/*`
+**Example 1**   `$ grep -n "USA" technical/911report/*`
 ```
 technical/911report/chapter-1.txt:28:    The security checkpoints through which passengers, including Atta and his colleagues, gained access to the American 11 gate were operated by Globe Security under a contract with American Airlines. In a different terminal, the single checkpoint through which passengers for United 175 passed was controlled by United Airlines, which had contracted with Huntleigh USA to perform the screening.
 technical/911report/chapter-10.txt:158:                the USA PATRIOT Act) began to take shape.
