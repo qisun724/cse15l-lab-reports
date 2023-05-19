@@ -1,9 +1,4 @@
 # LAB REPORT 4 - Command Line Tasks
-
-ss at each step, write down exactly what keys you pressed to and commands you ran get to that step, what the effects of those keypresses are(special characters like enter and tab, write them in angle brackets with code formatting)
-Keys pressed:
-explain why you did that
-
 ## Step 1. Log into ieng6
 ![Image](ssh.png)
 After I delete any exisitng forks of the repository on my account, I forked the repository. Then to log into ieng6, I typed the following command into my terminal but with `zz` replaced with the last two letters in my course-specific account:`ssh cs15lsp23zz@ieng6-201.ucsd.edu`. After I press `<enter>`, it didn't prompt me to put in my password because I generated SSH key for ieng6. If it does prompt you, just copy and paste your 15l account password over to the terminal and press`<enter>`.
@@ -11,9 +6,9 @@ After I delete any exisitng forks of the repository on my account, I forked the 
 ## Step 2. Clone the Repository
 ![Image](cloneRepo.png)
 After logging into ieng6, I cloned the repository that I forked by typing this into the terminal:
-`git clone https://github.com/qisun724/lab7.git`
+`git clone git@github.com:ucsd-cse15l-s23/lab7.git`
 
-`git clone` basically clones the repository you forked, and the URL after it is the URL of the github repository which you can simply copy and paste over. Then, press `<enter>`.
+`git clone` basically clones the repository you forked, and the URL after it is the ssh link that I copy and paste from the Github repository that I forked. Then, press `<enter>`.
 
 ## Step 3. Run Tests
 ![Image](failures.png)
@@ -30,6 +25,6 @@ To edit the code file `ListExamples.java` to fix the failing test, I typed the f
 Now that I changed the code, we run the test again to see if we fixed the failure. I pressed the up arrow 2 times to look through the history for the `bash test.sh`command we did earlier at first. Then I pressed `<Enter>`.
 
 ## Step 6. Commit and Push
-![Image](TestsPassed.png)
-First, I typed the following command into the terminal: `git add ListExamples.java`. This is bascially like checking the box for this file as if we are on Github desktop. Then, I typed `git commit -m "Edited file"` which saves the changes to the git repository. Finally, I typed `git push main `
+![Image](Push.png)
+First, I typed the following command into the terminal: `git add ListExamples.java`. This is bascially like checking the box for this file as if we are on Github desktop. Then, I typed `git commit -m "Index changed"` which saves the changes to the git repository. Finally, I typed `git push main` to the changes I made can be shown in the Github repository as well. And that is it!
 
