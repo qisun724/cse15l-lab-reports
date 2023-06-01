@@ -11,14 +11,14 @@ Above is a screenshot of the error I kept getting from running the bash script. 
 I think it is possible that it is due to the structure of your files and directory. May I see a screenshot of your file and directory, where everything is? Is your bash script and your MathFunctions.java file in different directories? If it is, then you might have to make some changes to your bash script, such as changing the path of what the MathFunctions.java file is.
 
 
-**3.  Another screenshot showing student trying that and description of what the bug is**
+**3. Another screenshot showing student trying that and description of what the bug is**
 ![Image](bugFixed.png)
 
 My bash script and MathFunctions.java are in different directories. I think the bug was definitely in my bash script. Because I am in the LabReport5 directory, the path that I gave after the javac and java command isn't correct. The changes I made was that I put `Subjects/` before MathFunctions.java and MathFunctions because that both of those files are in the Subjects directory.
 
 
 
-**4.  All info needed about the setup: file and directory structure, contents of each file before fixing the bug, full command line ran to trigger the bug, description of what to edit to fix**
+**4. All info needed about the setup: file and directory structure, contents of each file before fixing the bug, full command line ran to trigger the bug, description of what to edit to fix**
 
 ![Image](fileStructure.png)
 
