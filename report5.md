@@ -2,14 +2,18 @@
 ## Debugging Scenario
 1. Screenshot of symptom and description of a guess at the bug/what the failure-inducing input it
 ![Image](bug.png)
+
 Above is a screenshot of the error I kept getting from running the bash script. I think there might be something wrong with my bash script because I have ran through the code I wrote in the MathFunctions.java file and everything is correct. It says MathFunctions.java file not found, but my file is there. What is wrong?
 
 2. Response from a TA asking leading question or suggesting a command to try
+
+
 I think it is possible that it is due to the structure of your files and directory. May I see a screenshot of your file and directory, where everything is? Is your bash script and your MathFunctions.java file in different directories? If it is, then you might have to make some changes to your bash script, such as changing the path of what the MathFunctions.java file is.
 
 
 3.  Another screenshot showing student trying that and description of what the bug is
 ![Image](bugFixed.png)
+
 My bash script and MathFunctions.java are in different directories. I think the bug was definitely in my bash script. Because I am in the LabReport5 directory, the path that I gave after the javac and java command isn't correct. The changes I made was that I put `Subjects/` before MathFunctions.java and MathFunctions because that both of those files are in the Subjects directory.
 
 
@@ -17,13 +21,14 @@ My bash script and MathFunctions.java are in different directories. I think the 
 4.  All info needed about the setup: file and directory structure, contents of each file before fixing the bug, full command line ran to trigger the bug, description of what to edit to fix
 
 ![Image](fileStructure.png)
+
 The only file that changed was runFile.sh and here is before fixing the bug:
 ```
 javac MathFunctions.java
 java MathFunctions $1 $2
 ```
 
-Hhere is after fixing the bug:
+Here is after fixing the bug:
 ```
 javac Subjects/MathFunctions.java
 java Subjects/MathFunctions $1 $2
